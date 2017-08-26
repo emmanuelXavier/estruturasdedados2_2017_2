@@ -1,0 +1,35 @@
+[editor]
+line_wrapping=false
+line_break_column=72
+auto_continue_multiline=true
+
+[file_prefs]
+final_new_line=true
+ensure_convert_new_lines=false
+strip_trailing_spaces=false
+replace_tabs=false
+
+[indentation]
+indent_width=4
+indent_type=1
+indent_hard_tab_width=8
+detect_indent=false
+detect_indent_width=false
+indent_mode=2
+
+[project]
+name=source_01
+base_path=/Users/xavier/Google Drive/IFMA 2016/CC/4PERIODO/ESTRUTURAS DE DADOS II/Estruturas-de-dados-fontes/2017-2/
+description=
+
+[long line marker]
+long_line_behaviour=1
+long_line_column=72
+
+[files]
+current_page=0
+FILE_NAME_0=428;C;0;EUTF-8;1;1;0;%2FUsers%2Fxavier%2FGoogle%20Drive%2FIFMA%202016%2FCC%2F4PERIODO%2FESTRUTURAS%20DE%20DADOS%20II%2FEstruturas-de-dados-fontes%2F2017-2%2Fmain.c;0;4
+FILE_NAME_1=534;C++;0;EUTF-8;1;1;0;%2FUsers%2Fxavier%2FGoogle%20Drive%2FIFMA%202016%2FCC%2F4PERIODO%2FESTRUTURAS%20DE%20DADOS%20II%2FEstruturas-de-dados-fontes%2F2017-2%2Flib.h;0;4
+
+[VTE]
+last_dir=/Users/xavier

@@ -6,25 +6,27 @@ typedef struct Registro{
 	struct Registro * prox;
 } TRegistro;
 
-TRegistro * inicio = NULL;
+TRegistro * inicio = NULL, * ultimo = NULL;
 
 void primeiro(int informacao){
-	inicio = malloc(sizeof(TRegistro));
+	inicio =  malloc(sizeof(TRegistro));
 	inicio->info = informacao;
 	inicio->prox = NULL;
+	ultimo = inicio;
 }
 
 void demais(int informacao){
-	TRegistro * novo,* ultimo;
-	novo = malloc(sizeof(TRegistro));
+	TRegistro * novo;
+	novo =  malloc(sizeof(TRegistro));
 	novo->info = informacao;
 	novo->prox = NULL;
 	
-	ultimo = inicio;
+	/*ultimo = inicio;
 	while (ultimo->prox != NULL)
-		ultimo = ultimo->prox;
+		ultimo = ultimo->prox;*/
 	
 	ultimo->prox = novo;
+	ultimo = novo;
 }
 
 
@@ -45,7 +47,7 @@ void new(int informacao){
 
 
 TRegistro * primeiroNovo(){
-	inicio = malloc(sizeof(TRegistro));
+	inicio =  malloc(sizeof(TRegistro));
 	inicio->prox = NULL;
 	return inicio;
 }
@@ -53,7 +55,7 @@ TRegistro * primeiroNovo(){
 
 TRegistro * demaisNovo(){
 	TRegistro * novo,* ultimo;
-	novo = malloc(sizeof(TRegistro));
+	novo =  malloc(sizeof(TRegistro));
 	novo->prox = NULL;
 	
 	ultimo = inicio;
@@ -69,6 +71,12 @@ TRegistro * novo(){
 		return primeiroNovo();
 	else
 		return demaisNovo();		
+}
+
+void remover(){
+	TRegistro * destroyer = inicio;
+	inicio = inicio->prox;
+	free(destroyer);
 }
 
 
