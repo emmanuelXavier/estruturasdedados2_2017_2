@@ -6,13 +6,14 @@ typedef struct Registro{
 	struct Registro * prox;
 } TRegistro;
 
+
 TRegistro * inicio = NULL, * ultimo = NULL;
+
 
 void primeiro(int informacao){
 	inicio =  malloc(sizeof(TRegistro));
 	inicio->info = informacao;
-	inicio->prox = NULL;
-	ultimo = inicio;
+	inicio->prox = NULL;	
 }
 
 void demais(int informacao){
@@ -21,14 +22,21 @@ void demais(int informacao){
 	novo->info = informacao;
 	novo->prox = NULL;
 	
-	/*ultimo = inicio;
+	ultimo = inicio;
 	while (ultimo->prox != NULL)
-		ultimo = ultimo->prox;*/
+		ultimo = ultimo->prox;
 	
 	ultimo->prox = novo;
-	ultimo = novo;
+	//ultimo = novo;
 }
 
+int estaVazia(){
+	
+	if (inicio == NULL)
+		return 1;
+	else
+		return 0;		
+}
 
 
 
@@ -55,7 +63,7 @@ TRegistro * primeiroNovo(){
 
 TRegistro * demaisNovo(){
 	TRegistro * novo,* ultimo;
-	novo =  malloc(sizeof(TRegistro));
+	novo = malloc(sizeof(TRegistro));
 	novo->prox = NULL;
 	
 	ultimo = inicio;

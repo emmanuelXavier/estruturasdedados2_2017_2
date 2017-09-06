@@ -2,6 +2,8 @@
 
 int main(int argc, char **argv)
 {
+	
+	descritor.inicio = descritor.fim = NULL;
 	int n,qtdRemover,i;
 	
 	while(1){
@@ -25,20 +27,3 @@ int main(int argc, char **argv)
 	listar();
 	return 0;
 }
-
-/*
-int main(int argc, char **argv)
-{
-	int i = 0;
-	
-	while(i++ <= 1000000000)	
-		if (inicio == NULL)
-			primeiro(1);
-		else
-			demais(2);
-
-	printf("Fila preenchida");
-	return 0;
-}*/
-
-
