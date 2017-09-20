@@ -27,9 +27,8 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=1
-FILE_NAME_0=173;C;0;EUTF-8;1;1;0;%2FUsers%2Fxavier%2FGoogle%20Drive%2FIFMA%202016%2FCC%2F4PERIODO%2FESTRUTURAS%20DE%20DADOS%20II%2FEstruturas-de-dados-fontes%2F2017-2%2Fmain.c;0;4
-FILE_NAME_1=806;C++;0;EUTF-8;1;1;0;%2FUsers%2Fxavier%2FGoogle%20Drive%2FIFMA%202016%2FCC%2F4PERIODO%2FESTRUTURAS%20DE%20DADOS%20II%2FEstruturas-de-dados-fontes%2F2017-2%2Flib.h;0;4
+current_page=0
+FILE_NAME_0=734;C;0;EUTF-8;1;1;0;%2FUsers%2Fxavier%2FGoogle%20Drive%2FIFMA%202016%2FCC%2F2%20PERIODO%2FLINGUAGEM%20DE%20PROGRAMACAO%2FLinguagem-de-prog-fontes%2F2017-2%2Fsource-03%2Fmain.c;0;4
 
 [VTE]
 last_dir=/Users/xavier
