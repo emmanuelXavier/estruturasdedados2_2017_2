@@ -37,7 +37,7 @@ void insertionSortD(TRegistro * primeiro){
 			anterior = anterior->ant;
 		}
 		if (anterior != NULL)
-			anterior->info = temp;
+			anterior->prox->info = temp;
 		else
 			primeiro->info = temp;
 	}

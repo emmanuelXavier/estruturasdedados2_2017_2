@@ -1,8 +1,8 @@
 #include "lib.h"
 
-#define TAM 5
-
-int vetor[TAM] = {5,4,3,2,1};
+#define TAM 5         
+                 
+int vetor[TAM] = {100,1,50,54,2};
 
 int separar(int vetor[], int inicio, int fim){
 	int pivo = vetor[fim];
@@ -34,18 +34,6 @@ void quicksort(int vetor[], int inicio, int fim){
 	}
 }
 
-void insertionSort(int vetor[], int tamanho){
-	int i,j, temp;
-	for (i = 1; i < tamanho; i++){
-		j = i - 1;
-		temp = vetor[i];
-		while ((vetor[j] > temp) && (j >= 0)){
-			vetor[j + 1] = vetor[j];
-			j--;
-		}
-		vetor[j + 1] = temp;	
-	}
-}
 
 
 
